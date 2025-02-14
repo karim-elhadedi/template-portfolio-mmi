@@ -52,6 +52,16 @@ export default function Menu({ ulClasses, liClasses, includeCV, cvPath, underlin
             </li>
             <li className={liClasses}> 
                 <Link activeClass="active"
+                    to="experiences"
+                    spy={true}
+                    smooth={true}
+                    duration={300}
+                    className={underline ? "hover:cursor-pointer hover:underline" : ""}>
+                    Expériences
+                </Link>
+            </li>
+            <li className={liClasses}> 
+                <Link activeClass="active"
                     to="projects"
                     spy={true}
                     smooth={true}
